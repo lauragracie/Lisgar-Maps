@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lisgar Maps</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_description">No description available</string>
+    <string name="search_bar_description">Search bar for room number or name</string>
+    <string name="floor_image_description">Map of the school</string>
+    <string name="location_description">Location marker icon</string>
+    <string name="button_100_description">\'100\' rooms button</string>
+    <string name="button_200_description">\'200\' rooms button</string>
+    <string name="button_300_description">\'300\' rooms button</string>
+    <string name="button_400_description">\'400\' rooms button</string>
+    <string name="text_display_description">Instructions display</string>
+    <string name="directions_button_description">Get directions button</string>
+
+    <string name="button_100">100</string>
+    <string name="button_200">200</string>
+    <string name="button_300">300</string>
+    <string name="button_400">400</string>
+    <string name="directions_button">GET DIRECTIONS</string>
+</resources>

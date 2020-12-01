@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/search_bar_description"
+        android:focusableInTouchMode="false"
+        app:queryHint="Room Number or Name" >
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/text_display_description"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/floorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginRight="100dp"
+                    android:contentDescription="@string/floor_image_description"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/floor1" />
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="17dp"
+                    android:layout_height="20dp"
+                    android:alpha="0.0"
+                    android:contentDescription="@string/location_description"
+                    app:srcCompat="@drawable/floor_location"
+                    tools:layout_editor_absoluteX="374dp"
+                    tools:layout_editor_absoluteY="527dp" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bfloor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/button_100_description"
+                android:text="@string/button_100" />
+
+            <Button
+                android:id="@+id/bfloor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/button_200_description"
+                android:text="@string/button_200" />
+
+            <Button
+                android:id="@+id/bfloor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/button_300_description"
+                android:text="@string/button_300" />
+
+            <Button
+                android:id="@+id/bfloor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/button_400_description"
+                android:text="@string/button_400" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/bdirections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contentDescription="@string/directions_button_description"
+        android:text="@string/directions_button"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+
+</LinearLayout>
