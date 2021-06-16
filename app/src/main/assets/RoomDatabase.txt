@@ -570,7 +570,7 @@ Boys Washroom
 312
 North
 3
-N/A
+Gender Neutral Washroom
 0.60708
 0.24003
 
@@ -1106,7 +1106,7 @@ N/A
 352
 South
 3
-N/A
+Gender Neutral Washroom
 0.26372
 0.74721
 
