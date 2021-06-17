@@ -226,12 +226,13 @@ public class MainActivity extends AppCompatActivity{
             int floorX = getFloorX();
             int floorY = getFloorY();
 
+            //getHeight gives height on screen. getIntrinsicHeight shows original file height
             float scaleFactor = (float)floorimage.getHeight()/floorimage.getDrawable().getIntrinsicHeight();
 
             //Position on the map is defined by the x and y values for that room in the database
             //relative to the position of the floor map.
             int xPos = (int)(floorimage.getWidth() * scaleFactor * myLocation.getxPos());
-            int yPos = (int)(floorimage.getHeight()  * myLocation.getyPos());
+            int yPos = (int)(floorimage.getHeight() * myLocation.getyPos());
 
             lp.leftMargin = floorX + xPos - (location.getMeasuredWidth()/2);
             lp.topMargin = floorY + yPos - location.getMeasuredHeight();
